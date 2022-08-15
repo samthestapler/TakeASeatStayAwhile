@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chairs</title>
+	<script type="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="MagicsStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<header>
+		<h1>CoolChairs.WeirdChairs.NeatChairs.UniqueChairs.WackyChairs.SpecialChairs.QuirkyChairs.EccentricChairs.UnusualChairs.PeculiarChairs</h1>
+		<h4>Dalle Mini Generations</h4>
+	</header>
+
+	<div class="iconButtons">
+		<div class="popup">
+			<a href="./outputs.html">
+				<button class="navButtons"><i class="fa fa-backward" aria-hidden="true"></i></button>
+			</a>
+			<div class="popupContent">Back</div>
+		</div>
+
+		<div class="popup">
+			<a href="./home.html">
+				<button class="navButtons"><i class="fa fa-home"></i></button>
+			</a>
+			<div class="popupContent">Home</div>
+		</div>
+		<div class="popup">
+			<a href="Profile.html">
+				<button class="navButtons"><i class="fa fa-user" aria-hidden="true"></i></button>
+			</a>
+			<div class="popupContent">Profile</div>
+		</div>
+		<div class="popup">
+			<a href="./CheckItOut.html">
+				<button class="navButtons"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+			</a>
+			<div class="popupContent">Cart</div>
+		</div>
+		<div class="popup">
+			<a href="./magic.html">
+				<button class="navButtons"><i class="fa fa-magic" aria-hidden="true"></i></button>
+			</a>
+			<div class="popupContent">Magic</div>
+		</div>
+	</div>
+
+	<div id="image-container"></div>
+
+
+	<script type="text/javascript">
+		var zerofilled = function(n) {
+			return ('000' + n).slice(-3);
+		}
+
+		// Run a loop for the amount of images
+		for (var i = 0; i <= 115; i++) {
+			// Create img element
+			var imgEl = document.createElement('img');
+			// Add class to img element
+			imgEl.classList = 'chair-img';
+			// Generate img src with index value
+			var src = "images/Dalle/" + zerofilled(i) + '.png';
+			// Apply img src to img element
+			imgEl.src = src;
+			// Append the img element to a div
+			document.querySelector('#image-container').appendChild(imgEl);
+		}
+
+		console.log(document.querySelectorAll('.chair-img'))
+	</script>
+	
+</body>
+</html>
