@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chairs</title>
+	<script type="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.google.com/specimen/Inconsolata">
+	<style>
+		body{
+			font-family: "Inconsolata", serif;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>CoolChairs.WeirdChairs.NeatChairs.UniqueChairs.WackyChairs.SpecialChairs.QuirkyChairs.EccentricChairs.UnusualChairs.PeculiarChairs</h1>
+	</header>
+	
+
+	<div class="iconButtons">
+		<div class="popup">
+			<a href="./ChooseSomeTextures.html">
+				<button class="navButtons"><i class="fa fa-backward" aria-hidden="true"></i></button>
+			</a>
+			<div class="popupContent">Back</div>
+		</div>
+
+		<div class="popup">
+			<a href="./home.html">
+				<button class="navButtons"><i class="fa fa-home"></i></button>
+			</a>
+			<div class="popupContent">Home</div>
+		</div>
+		<div class="popup">
+			<a href="Profile.html">
+				<button class="navButtons"><i class="fa fa-user" aria-hidden="true"></i></button>
+			</a>
+			<div class="popupContent">Profile</div>
+		</div>
+		<div class="popup">
+			<a href="./CheckItOut.html">
+				<button class="navButtons"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+			</a>
+			<div class="popupContent">Cart</div>
+		</div>
+		<div class="popup">
+			<a href="./magic.html">
+				<button class="navButtons"><i class="fa fa-magic" aria-hidden="true"></i></button>
+			</a>
+			<div class="popupContent">Magic</div>
+		</div>
+	</div>
+
+	<h4>Check it out!</h4>
+	<h5>Ready to make it yours?</h5>
+
+
+	<div class="form">
+		<div class="finalLook">
+			<figure>
+				<img src="images/angle4.jpg" class="finalLookSize">
+				<figcaption class="share">
+					<a href="">
+						<button class="shareButton"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+					</a>
+					<a href="">
+						<button class="shareButton"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+					</a>
+					<a href="">
+						<button class="shareButton"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+					</a>
+					<a href="">
+						<button class="shareButton"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+					</a>
+				</figcaption>
+				<figcaption class="shareCheckbox">
+					<label>
+						<input type="checkbox" checked="checked" name="sameadr">Share your chair on this site
+					</label>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="row">
+			<div class="col-75">
+				<div class="container">
+					<form action="/action_page.php">
+
+						<div class="row">
+							<div class="col-50">
+								<h3>Billing Address</h3>
+								<label for="fname"><i class="fa fa-user"></i> Full Name</label>
+								<input type="text" id="fname" name="firstname" placeholder="Jane Doe">
+								<label for="email"><i class="fa fa-envelope"></i> Email</label>
+								<input type="text" id="email" name="email" placeholder="jane@example.com">
+								<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+								<input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+								<label for="city"><i class="fa fa-institution"></i> City</label>
+								<input type="text" id="city" name="city" placeholder="New York">
+
+								<div class="row">
+									<div class="col-50">
+										<label for="state">State</label>
+										<input type="text" id="state" name="state" placeholder="NY">
+									</div>
+									<div class="col-50">
+										<label for="zip">Zip</label>
+										<input type="text" id="zip" name="zip" placeholder="10001">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-50">
+								<h3>Payment</h3>
+								<label for="fname">Accepted Cards</label>
+								<div class="icon-container">
+									<i class="fa fa-cc-visa" style="color:navy;"></i>
+									<i class="fa fa-cc-amex" style="color:blue;"></i>
+									<i class="fa fa-cc-mastercard" style="color:red;"></i>
+									<i class="fa fa-cc-discover" style="color:orange;"></i>
+								</div>
+								<label for="cname">Name on Card</label>
+								<input type="text" id="cname" name="cardname" placeholder="Jane More Doe">
+								<label for="ccnum">Credit card number</label>
+								<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+								<label for="expmonth">Exp Month</label>
+								<input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+								<div class="row">
+									<div class="col-50">
+										<label for="expyear">Exp Year</label>
+										<input type="text" id="expyear" name="expyear" placeholder="2018">
+									</div>
+									<div class="col-50">
+										<label for="cvv">CVV</label>
+										<input type="text" id="cvv" name="cvv" placeholder="352">
+									</div>
+								</div>
+							</div>
+						</div>
+						<label>
+							<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+						</label>
+						<input type="submit" value="Continue to checkout" class="btn">
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+
+
+
+</body>
+</html>
